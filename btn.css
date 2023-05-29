@@ -1,0 +1,18 @@
+button.btn {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 1.3rem 2.5rem;
+  width: fit-content;
+  border: 0;
+  cursor: pointer; }
+  button.btn.btn-beige {
+    background-color: #bead8e; }
+  button.btn.btn-transparent {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.33); }

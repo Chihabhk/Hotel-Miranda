@@ -1,0 +1,20 @@
+{
+    "name": "proyecto-miranda",
+    "version": "1.0.0",
+    "description": "Hotel Miranda Website",
+    "main": "index/index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "node-sass -w --recursive styles/styles.scss -o ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Chihabhk/Hotel-Miranda.git"
+    },
+    "author": "Chihab",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Chihabhk/Hotel-Miranda/issues"
+    },
+    "homepage": "https://github.com/Chihabhk/Hotel-Miranda#readme"
+}
