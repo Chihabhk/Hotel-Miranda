@@ -67,6 +67,7 @@ main {
                 background: transparent url("../images/calendar.svg");
                 background-repeat: no-repeat;
                 background-position-y: 4px;
+
                 border: none;
                 border-bottom: 2px solid #bead8e;
                 color: #686868;
@@ -207,11 +208,14 @@ main {
                 color: black;
                 background-color: white;
                 padding: 1rem;
+                opacity: 0.7;
+                transition: 300ms ease;
 
                 &:active,
                 &:hover {
                     background-color: #bdac8d;
                     color: white;
+                    opacity: 1;
                 }
             }
         }
@@ -353,55 +357,60 @@ main {
 
             color: #222222;
         }
-        > div.facilities-swiper > div.swiper-wrapper {
-            width: 100vw;
-            display: flex;
-            align-content: center;
-            > div.swiper-slide {
+        > div.facilities-swiper {
+            > div.swiper-pagination .swiper-pagination-bullet-active {
+                --swiper-pagination-color: #bead8e;
+            }
+            > div.swiper-wrapper {
+                width: 100vw;
                 display: flex;
-                justify-content: center;
-                > div.feature {
+                align-content: center;
+                > div.swiper-slide {
                     display: flex;
-                    flex-direction: column;
-                    gap: 1.5rem;
-                    padding: 1.5rem;
-                    max-width: 25rem;
-                    position: relative;
-                    > img {
-                        position: absolute;
-                        align-self: flex-start;
-                        width: 4.4rem;
-                        top: 4.6rem;
-                    }
-                    > span {
+                    justify-content: center;
+                    > div.feature {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        padding: 1.5rem;
+                        max-width: 25rem;
                         position: relative;
-                        top: -1rem;
-                        align-self: flex-end;
-                        justify-self: baseline;
-                        font-family: "Archivo";
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 120px;
-                        line-height: 130px;
-                        color: rgba(34, 34, 34, 0.04);
-                    }
-                    > h4 {
-                        font-family: "Old Standard TT";
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        line-height: 30px;
-                        letter-spacing: -0.9px;
-                        color: #222222;
-                    }
-                    > p {
-                        font-family: "Archivo";
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 24px;
-                        /* or 171% */
-                        color: #777777;
+                        > img {
+                            position: absolute;
+                            align-self: flex-start;
+                            width: 4.4rem;
+                            top: 4.6rem;
+                        }
+                        > span {
+                            position: relative;
+                            top: -1rem;
+                            align-self: flex-end;
+                            justify-self: baseline;
+                            font-family: "Archivo";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 120px;
+                            line-height: 130px;
+                            color: rgba(34, 34, 34, 0.04);
+                        }
+                        > h4 {
+                            font-family: "Old Standard TT";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 30px;
+                            line-height: 30px;
+                            letter-spacing: -0.9px;
+                            color: #222222;
+                        }
+                        > p {
+                            font-family: "Archivo";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            /* or 171% */
+                            color: #777777;
+                        }
                     }
                 }
             }
